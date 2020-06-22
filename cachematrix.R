@@ -2,7 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+# This function creates a cached matrix and returns a list of functions of get/set matrix and its inverse.
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+#This function returns the original cached inverse if the cached matrix has not changed else recomputes and gives inverse.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   i <- x$getInv()
